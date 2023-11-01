@@ -1,6 +1,10 @@
 // Dark Mode
 $background-dark: #0B0B0B;
-$secundary-background-dark: linear-gradient(97deg, #3C0015 -82.2%, #0B0B0B 61.02%);
+$secundary-background-dark: linear-gradient(
+    97deg,
+  #3C0015 -82.2%,
+  #0B0B0B 61.02%
+  );
 $header-background-dark: #151515;
 $aside-media-background-dark: #222222;
 
@@ -19,3 +23,27 @@ $background-light: #fafafa;
 // $brand-color-light: ?;
 // $secondary-color-light: ?;
 // $alternative-color-light: ?;
+
+
+
+//Text Size
+
+$h1-title-desk: 2.375rem;
+$h1-title-tablet: 1.75rem;
+$h1-title-mobile: 1.375rem;
+
+$h2-subtitle-desk: 1.625rem;
+$h2-subtitle-tablet: 1.2rem;
+$h2-subtitle-mobile: 1rem;
+
+$h3-subtitle-desk: 1.125rem;
+$h3-subtitle-tablet: 1rem;
+$h3-subtitle-tablet: 0.875rem;
+
+$text-desk: 1rem;
+$text-tablet: 0.875rem;
+$text-mobile: 0.875rem;
+
+$subtext-desk: 0.875rem;
+$subtext-tablet: 0.75rem;
+$subtext-mobile: 0.75rem;
