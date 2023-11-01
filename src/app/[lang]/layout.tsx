@@ -3,6 +3,8 @@ import { Inter } from 'next/font/google'
 import '../../styles/globals.css'
 import '../../styles/styles.scss'
 import { i18n } from '@/config/i18n.config'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export async function generateStaticParams() {
@@ -26,9 +28,9 @@ export default function RootLayout({
   return (
     <html lang={params.lang}>
       <body className={inter.className}>
-        <header></header>
+        <Header />
         {children}
-        <footer></footer>
+        <Footer />
       </body>
     </html>
   )
