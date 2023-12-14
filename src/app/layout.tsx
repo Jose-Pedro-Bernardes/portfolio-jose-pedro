@@ -1,9 +1,27 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import '../../styles/globals.css'
-import '../../styles/styles.scss'
+// eslint-disable-next-line camelcase
+import { Inter, Nunito_Sans, Yeseva_One } from 'next/font/google'
+import '../styles/globals.css'
+import '../styles/styles.scss'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
+})
+
+const nunitoSans = Nunito_Sans({
+  subsets: ['latin'],
+  variable: '--font-nunito-sans',
+  display: 'swap',
+})
+
+const yesevaOne = Yeseva_One({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-yeseva-one',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: 'Portfolio - José Pedro Bernardes',
@@ -17,8 +35,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html>
-      <body className={inter.className}>{children}</body>
+    <html
+      lang="pt-BR"
+      className={`${inter.variable} ${yesevaOne.variable} ${nunitoSans.className}`}
+    >
+      <body>{children}</body>
     </html>
   )
 }
