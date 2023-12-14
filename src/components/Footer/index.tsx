@@ -1,16 +1,18 @@
 import Image from 'next/image'
 import React from 'react'
 
+import './Footer.styles.scss'
+
 export default function Footer() {
   return (
-    <footer>
+    <footer className="footer__container">
       <section>
         <figure className="nome da classe">
           <Image
-            src="caminho/do/seu/logotipo.png"
+            src="/images/logoWhite.svg"
             alt="Logo da Empresa"
-            width="2"
-            height="2"
+            width="24"
+            height="24"
           />
           <figcaption>Texto do logotipo</figcaption>
         </figure>

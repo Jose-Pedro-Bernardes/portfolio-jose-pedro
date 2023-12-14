@@ -1,18 +1,19 @@
 import Image from 'next/image'
 import React from 'react'
 import MenuNav from './MenuNav'
+import './Header.styles.scss'
 
 export default function Header() {
   return (
-    <header>
-      <figure className="logo-container">
+    <header className="headerContainer">
+      <figure className="logoContainer">
         <Image
-          src="caminho/do/seu/logotipo.png"
+          src="/images/Logo.svg"
           alt="Logo da Empresa"
-          width="2"
-          height="2"
+          width="33"
+          height="30"
         />
-        <figcaption>Texto do logotipo</figcaption>
+        <figcaption className="logoText">JPBM</figcaption>
       </figure>
       <MenuNav />
     </header>

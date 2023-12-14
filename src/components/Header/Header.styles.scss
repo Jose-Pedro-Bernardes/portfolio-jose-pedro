@@ -1,0 +1,24 @@
+.headerContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    font-family: "Inter", sans-serif;
+    justify-content: space-between;
+}
+
+.logoContainer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logoText{
+    color: #FFD600;
+    font-size: 14px;
+    font-family: var(--font-yeseva-one);
+}
+

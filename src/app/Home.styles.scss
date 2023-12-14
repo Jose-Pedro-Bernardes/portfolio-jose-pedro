@@ -1,0 +1,74 @@
+.main__container{
+    width: 100%;
+    background-color: #000;
+}
+
+.main__firstSection{
+    width: 100%;
+    height: 550px;
+    box-sizing: border-box;
+    padding-top: 100px;
+    background-image: url("/images/background/HomeMobile.svg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: start;
+    align-items: center;
+    gap: 31.4px;
+}
+
+.firstSection__infoContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    .infoContainer--name{
+        font-size: 20px;
+        font-weight: 700;
+        color: #ffe600;
+    }
+
+    .infoContainer--description{
+        font-weight: 400;
+        font-size: 14px;
+        width: 331px;
+        text-align: center;
+        color: #FFFFFF;
+        line-height: 17px;
+
+        .bold-color{
+            color: #ffe600;
+            font-weight: 700;
+        }
+    }
+
+    .infoContainer__menuNavigate{
+        display: flex;
+        gap: 15px;
+        margin-top: 21px;
+        
+        .menuNavigate--downloadCV{
+            background-color: #DDBA00;
+            font-size: 12px;
+            width: 80px;
+            height: 38px;
+            border: none;
+            border-radius: 6px;
+            color: #FFFFFF;
+            font-weight: 700;
+        }
+
+        .menuNavigate--link{
+            width: 41px;
+            height: 38px;
+            border-radius: 6px;
+            background-color: rgb(255, 255, 255, 50%);
+            border: 1px solid #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
