@@ -14,11 +14,13 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    pointer-events: none;
 }
 
 .logoText{
     color: #FFD600;
     font-size: 14px;
     font-family: var(--font-yeseva-one);
+    user-select: none;
 }
 
