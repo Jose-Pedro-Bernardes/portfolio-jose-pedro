@@ -36,6 +36,10 @@
     .link{
         text-decoration: none;
         color: white;
+        transition: ease 0.2s all;
+    }
+    .link:hover{
+        color: #FFD600;
     }
 }
 
@@ -49,7 +53,7 @@
         height: auto;
         position: static;
         background-color: transparent;
-        font-size: 14px;
+        font-size: 15px;
         display: flex;
         transform: translateX(0);
         transition: none;
