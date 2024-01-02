@@ -1,11 +1,18 @@
-import React from 'react'
-import './MenuNav.styles.scss'
+'use client'
+import { useState } from 'react'
 import Image from 'next/image'
+import './MenuNav.styles.scss'
 
 export default function MenuNav() {
+  const [menuVisible, setMenuVisible] = useState(false)
+
+  const toggleMenu = () => {
+    setMenuVisible(!menuVisible)
+  }
+
   return (
     <>
-      <button className="hamburguer_btn">
+      <button className="hamburguer_btn" onClick={toggleMenu}>
         <Image
           src="/images/MenuHamburguer.svg"
           alt="Botão para abrir o menu de navegação do site."
@@ -13,23 +20,28 @@ export default function MenuNav() {
           height={25}
         />
       </button>
-      <nav className="menuNav">
-        <a href="#" title="Página Inicial">
-          Início
-        </a>
-        <a href="#servicos" title="Nossos Serviços">
-          Serviços
-        </a>
-        <a href="#sobre" title="Sobre Nós">
-          Sobre
-        </a>
-        <a href="#portfolio" title="Nosso Portfólio">
-          Portfólio
-        </a>
-        <a href="#contato" title="Entre em Contato">
-          Contato
-        </a>
-      </nav>
+      {menuVisible && (
+        <nav className="menuNav">
+          <button className="close_btn" onClick={toggleMenu}>
+            X
+          </button>
+          <a href="#" className="link_a" title="Página Inicial">
+            Início
+          </a>
+          <a href="#servicos" className="link" title="Nossos Serviços">
+            Serviços
+          </a>
+          <a href="#sobre" className="link" title="Sobre Nós">
+            Sobre
+          </a>
+          <a href="#portfolio" className="link" title="Nosso Portfólio">
+            Portfólio
+          </a>
+          <a href="#contato" className="link" title="Entre em Contato">
+            Contato
+          </a>
+        </nav>
+      )}
     </>
   )
 }
