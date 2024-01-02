@@ -43,12 +43,31 @@
   transform: translateX(0);
 }
 
-@media(min-width: 1100px){
-    .menuNav{
+@media (min-width: 1000px) {
+    .menuNav {
+        width: auto;
+        height: auto;
+        position: static;
+        background-color: transparent;
+        font-size: 14px;
         display: flex;
+        transform: translateX(0);
+        transition: none;
+        gap: 26px;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding: 0;
+
+        .close_btn{
+            display: none;
+        }
     }
-    .hamburguer_btn{
+
+    .menuNav.show{
+        padding: 0;
+    }
+
+    .hamburguer_btn {
         display: none;
     }
 }
-  

@@ -3,10 +3,17 @@
     top: 0;
     left: 0;
     display: flex;
+    justify-content: center;
     width: 100%;
     box-sizing: border-box;
     padding: 20px;
     font-family: "Inter", sans-serif;
+}
+
+.alignGrid{
+    width: 74.52%;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
