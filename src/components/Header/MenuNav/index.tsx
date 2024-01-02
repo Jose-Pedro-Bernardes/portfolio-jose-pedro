@@ -20,28 +20,46 @@ export default function MenuNav() {
           height={25}
         />
       </button>
-      {menuVisible && (
-        <nav className="menuNav">
-          <button className="close_btn" onClick={toggleMenu}>
-            X
-          </button>
-          <a href="#" className="link_a" title="Página Inicial">
-            Início
-          </a>
-          <a href="#servicos" className="link" title="Nossos Serviços">
-            Serviços
-          </a>
-          <a href="#sobre" className="link" title="Sobre Nós">
-            Sobre
-          </a>
-          <a href="#portfolio" className="link" title="Nosso Portfólio">
-            Portfólio
-          </a>
-          <a href="#contato" className="link" title="Entre em Contato">
-            Contato
-          </a>
-        </nav>
-      )}
+      <nav className={`menuNav ${menuVisible ? 'show' : ''}`}>
+        <button className="close_btn" onClick={toggleMenu}>
+          X
+        </button>
+        <a href="#" className="link_a" title="Página Inicial">
+          Início
+        </a>
+        <a
+          href="#servicos"
+          className="link"
+          title="Nossos Serviços"
+          onClick={toggleMenu}
+        >
+          Serviços
+        </a>
+        <a
+          href="#sobre"
+          className="link"
+          title="Sobre Nós"
+          onClick={toggleMenu}
+        >
+          Sobre
+        </a>
+        <a
+          href="#portfolio"
+          className="link"
+          title="Nosso Portfólio"
+          onClick={toggleMenu}
+        >
+          Portfólio
+        </a>
+        <a
+          href="#contato"
+          className="link"
+          title="Entre em Contato"
+          onClick={toggleMenu}
+        >
+          Contato
+        </a>
+      </nav>
     </>
   )
 }

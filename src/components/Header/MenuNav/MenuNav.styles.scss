@@ -18,13 +18,16 @@
     flex-direction: column;
     gap: 12px;
     align-items: center;
-
+    
     position:fixed;
     top: 0;
     right: 0;
-
+    
     background-color: #0e0e0e;
     font-size: 14px;
+    
+    transform: translateX(150px);
+    transition: transform 0.3s ease-in-out;
     
     .link_a{
         text-decoration: none;
@@ -36,6 +39,9 @@
     }
 }
 
+.menuNav.show {
+  transform: translateX(0);
+}
 
 @media(min-width: 1100px){
     .menuNav{
@@ -45,3 +51,4 @@
         display: none;
     }
 }
+  
