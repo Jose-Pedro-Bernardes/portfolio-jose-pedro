@@ -3,6 +3,7 @@ import Header from '@/components/Header'
 
 import './Home.styles.scss'
 import FirstSection from '@/components/FirstSection'
+import Services from '@/components/Services'
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Header />
       <main className="main__container">
         <FirstSection />
+        <Services />
       </main>
       <Footer />
     </>
