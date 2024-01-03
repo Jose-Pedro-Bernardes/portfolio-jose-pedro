@@ -6,7 +6,7 @@ import './Services.styles.scss'
 export default function Services() {
   return (
     <section id="servicos" className="services__container">
-      <div className="alignGrid">
+      <div className="alignGridx">
         <header className="services__header">
           <h3 className="services__h3">MEUS SERVIÇOS</h3>
           <h2 className="services__h2">
@@ -15,7 +15,7 @@ export default function Services() {
           <span className="line"></span>
         </header>
         <article className="services__article">
-          <p>
+          <p className="article__p">
             Minha experiência no WordPress, desenvolvo sites práticos que
             simplificam a gestão de conteúdo. Ideal para aqueles que buscam um
             parceiro comprometido e apaixonado por transformar ideias em
@@ -23,58 +23,60 @@ export default function Services() {
             seus objetivos online. Vamos trabalhar juntos para criar uma
             presença digital eficaz e memorável!
           </p>
-          <p>
+          <p className="article__p">
             Além disso, sou especializado em front-end e proporciono soluções
             tecnológicas avançadas com JavaScript, Typescript, React,
             Styled-Components, Sass, Node.js e Express.js, garantindo aplicações
             web de qualidade.
           </p>
-          <button>Vamos conversar !</button>
-          <Link className="menuNavigate--link whatsapp" href={'#contato'}>
+          <div className="btn__container">
+            <button className="btnCall">Vamos conversar !</button>
+            <Link className="link__whatsapp" href={'#contato'}>
+              <Image
+                src="/images/links/Whatsapp.svg"
+                alt="Logo do WhatsApp"
+                width={30}
+                height={30}
+              />
+            </Link>
+          </div>
+        </article>
+        <aside className="services_content">
+          <div className="services__box">
             <Image
               src="/images/BrandDesign.svg"
               alt="Ícone que sugere um design feito par uma marca."
-              width={30}
-              height={30}
+              width={44}
+              height={44}
             />
-          </Link>
-        </article>
-        <aside>
-          <div className="services__box">
-            <Image
-              src="/images/links/Whatsapp.svg"
-              alt="Logo do WhatsApp"
-              width={30}
-              height={30}
-            />
-            <p>Identidade Visual da Marca</p>
+            <p className="text_box">Identidade Visual da Marca</p>
           </div>
-          <div className="services__box special">
+          <div className="services__box special box2">
             <Image
               src="/images/UIUX.svg"
               alt="Ícone que sugere design de UI e UX"
-              width={30}
-              height={30}
+              width={44}
+              height={44}
             />
-            <p>Design UI e UX</p>
+            <p className="text_box">Design UI e UX</p>
           </div>
           <div className="services__box special">
             <Image
               src="/images/wordpress.svg"
               alt="Ícone onde existe a logo do wordpress."
-              width={30}
-              height={30}
+              width={44}
+              height={44}
             />
-            <p>Sites WordPress</p>
+            <p className="text_box">Sites WordPress</p>
           </div>
-          <div className="services__box">
+          <div className="services__box box4">
             <Image
               src="/images/code.svg"
               alt="Ícone que sugere uma tag, que remete a programação."
-              width={30}
-              height={30}
+              width={44}
+              height={44}
             />
-            <p>Programação de sites</p>
+            <p className="text_box">Programação de sites</p>
           </div>
         </aside>
       </div>
