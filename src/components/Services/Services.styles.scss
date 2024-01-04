@@ -105,6 +105,7 @@
         
         .text_box{
             font-size: 12px;
+            font-weight: 600;
             color: #FFFFFFFF;
             width: 114px;
             text-align: center;
@@ -150,7 +151,7 @@
             gap: 10px;
             
             .text_box{
-                font-size: 14px;
+                font-size: 12px;
                 color: #FFFFFFFF;
                 width: 114px;
                 text-align: center;
@@ -161,7 +162,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        height: 446px;
+        height: 500px;
         padding: 50px 0px 0px 0px;
         .text__container{
             .services__header{
@@ -203,15 +204,22 @@
                     gap: 22px;
             
                     .btnCall{
+                        font-size: 14px;
+                        font-weight: 600;
                         width: 163px;
                         height: 33px;
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         border-radius: 6px;
-                        background-color: #ffd500e5;
+                        background-color: #ffd500c5;
+                        border: none;
                         color: #FFFFFFFF;
-                        border: 1px solid #ffd500e5;
+                        cursor: pointer;
+                        transition: ease 0.2s all;
+                    }
+                    .btnCall:hover{
+                        background-color: #ffd500a2;
                     }
             
                     .link__whatsapp{
@@ -223,6 +231,11 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
+                        transition: ease 0.2s all;
+                    }
+
+                    .link__whatsapp:hover{
+                        background-color: rgba(255, 255, 255, 0.699);
                     }
                 }
             }
@@ -243,16 +256,55 @@
                 align-items: start;
                 gap: 20px;
                 .article__p{
-                    font-size: 14px;
+                    font-size: 16px;
                     text-align: start;
                     width: 400px;
                     color: #FFFFFFFF;
                     line-height: 22px;
                 }
+                .btn__container{
+                    margin-top: 10px;
+                    margin-bottom: 0px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 22px;
+            
+                    .btnCall{
+                        font-size: 1rem;
+                        font-weight: 600;
+                        width: 202px;
+                        height: 41px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 6px;
+                        background-color: #ffd500c5;
+                        border: none;
+                        color: #FFFFFFFF;
+                        cursor: pointer;
+                        transition: ease 0.2s all;
+                    }
+                    .btnCall:hover{
+                        background-color: #ffd500a2;
+                    }
+            
+                    .link__whatsapp{
+                        width: 36px;
+                        height: 33px;
+                        border-radius: 6px;
+                        background-color: rgb(255, 255, 255, 50%);
+                        border: 1px solid #fff;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transition: ease 0.2s all;
+                    }
             }
         }
-
-        .services_content{
+    }        
+            .services_content{
+            margin-top: 50px;
             .services__box{
                 .boxImg{
                     width: 54px;
@@ -265,12 +317,12 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                gap: 10px;
+                gap: 15px;
                 
                 .text_box{
-                    font-size: 14px;
+                    font-size: 16px;
                     color: #FFFFFFFF;
-                    width: 114px;
+                    width: 160px;
                     text-align: center;
                 }
             }
@@ -280,6 +332,7 @@
 
 @media(min-width: 1400px){
     .alignGridx{
+        max-width: 1200px;
         .text__container{
             .services__article{
                 width: 100%;
@@ -296,5 +349,5 @@
                 }
             }
         }
-}
+    }
 }
