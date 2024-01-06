@@ -9,7 +9,7 @@ export default function Header() {
       <div className="alignGrid">
         <figure className="logoContainer">
           <Image
-            src="/images/Logo.svg"
+            src="/images/LOGO.svg"
             alt="Logo da Empresa"
             width="33"
             height="30"
