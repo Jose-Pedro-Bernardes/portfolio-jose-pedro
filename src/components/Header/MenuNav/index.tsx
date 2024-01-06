@@ -14,7 +14,7 @@ export default function MenuNav() {
     <>
       <button className="hamburguer_btn" onClick={toggleMenu}>
         <Image
-          src="/images/MenuHamburguer.svg"
+          src="/images/MENU.svg"
           alt="Botão para abrir o menu de navegação do site."
           width={27}
           height={25}
